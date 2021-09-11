@@ -1,0 +1,174 @@
+.novosti_tekst p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 1% 10%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .sadrzaj .slika {
+    background-image: url("../img/novost1.jpg");
+    background-size: cover;
+    position: static;
+    padding: 10% 3%;
+    height: 100px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow-y: hidden;
+    overflow-x: visible;
+  }
+
+  .naslov {
+    padding: 1% auto;
+    padding-bottom: 1%;
+    text-align: center;
+    margin: 4% 20%;
+    border-bottom: 3px solid orange;
+  }
+  
+  .slika h1 {
+    margin-top: -3%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    animation-name: slikaAnimacija;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+  }
+
+  .redA {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 50% 50%;
+    padding: 3% 20%;
+    padding-bottom: 0;
+  }
+  
+  .redA:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .stupacA {
+    float: center;
+  }
+  
+
+  .video {
+    padding-top: 0;
+    padding: 5% 20%;
+  }
+  
+  .stupacA img {
+    border-radius:1.5%;
+    height: 100;
+    width: 100%;
+  }
+  
+  
+  .galerija:hover {
+    opacity: 0.8;
+  }
+  
+  .modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active, .demo:hover {
+    opacity: 1;
+  }
+  
+  
+@keyframes slikaAnimacija {
+  0% {
+      margin-top: -30%;
+  }
+  100% {
+      margin-top: -3%;
+  }
+}
+
+@media all and (max-width: 768px) {
+    .novosti_tekst p {
+      padding: 0 20px;
+    }
+    .slika h1 {
+      margin-top: 20%;
+      font-size: 2em;
+    }
+  }

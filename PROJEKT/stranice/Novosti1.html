@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/novosti1.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- materialIcons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Novosti 1</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <ul class="nav1">
+            <li class="logo"><a href="/Index.html"><img src="/img/Algebra-logo.png" alt="Algebra Logo" width="40"
+                        height="40"></a></li>
+            <li class="gumb5"><a href="/index.html"><i class="material-icons">house</i>Početna</a></li>
+            <li class="gumb4"><a href="/Stranice/ONama.html"><i class="material-icons">question_answer</i>O nama</a></li>
+            <li class="gumb3"><a href="/stranice/Novosti.html"><i class="material-icons">info</i>Novosti</a></li>
+            <li class="gumb2"><a href="/stranice/NastavniPlan.html"><i class="material-icons">info</i>Nastavni plan</a>
+            </li>
+            <li id="onclick" class="kontakt" data-toggle="modal" data-target="#exampleModalCenter"><a href="#"><i
+                class="material-icons">mail</i>Kontakt</a></li>
+            <li class="meni"><a href="#"><i class="material-icons">menu</i></a></li>
+        </ul>
+    </nav>
+
+    <div id="contactdiv">
+        <form class="form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" enctype="text/plain" id="contact">
+            <h3><i id="iconMail" class="material-icons">email</i>Kontaktirajte nas</h3>
+            <hr /><br />
+            <label>Puno ime: <span></span></label>
+            <br />
+            <input type="text" id="name" placeholder="Ime" required/><br />
+            <br />
+            <label>E-mail: <span></span></label>
+            <br />
+            <input type="text" id="email" placeholder="Email" required/><br />
+            <br />
+            <label>Važnost poruke: <span></span></label>
+            <br />
+            <select name="Važnost" id="Važnost">
+                <option value="Visoka">Visoka</option>
+                <option value="Niska">Niska</option>
+            </select>
+            <br />
+            <br />
+            <label>Vaša poruka:</label>
+            <br />
+            <textarea id="message" placeholder="Poruka..."></textarea><br />
+            <br />
+            <label for="mojBox" class="box">Primaj newsletter: 
+                <input type="checkbox" name="box" id="mojBox" class="box__input">
+                <div class="box__box"></div>
+            </label>
+            <br>
+            <br>
+            <input type="submit" id="send" value="Send" />
+            <input type="button" id="cancel" value="Cancel" />
+            <br />
+        </form>
+    </div>
+
+    <div class="sadrzaj">
+
+        <div class="slika">
+            <h1>Student Josip Stanešić 12. je sistemaš svijeta i <br>
+                dobitnik medalje izvrsnosti.</h1>
+        </div>
+        <h1 class="naslov">WorldSkills natjecanje - Kazan 2019.</h1>
+        <div class="odjeljci">
+            <div class="novosti_tekst">
+                <p>Nakon godinu dana priprema za natjecanje WorldSkills
+                    Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                    cijelog svijeta, trud se itekako isplatio. Josip,
+                    student 3. godine preddiplomskog studija sistemskog
+                    inženjerstva osvojio je 12. mjesto u vještini IT
+                    Networks and System Administration te osvojio medalju
+                    izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                    mentorima koji su ga pripremali za ovo natjecanje –
+                    voditelju studija sistemskog inženjerstva Silviju
+                    Papiću, voditelju katedre za operacijske sustave –
+                    Vedranu Dakiću i asistentu na studiju sistemskog
+                    inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                    studentu 3.godine preddiplomskog studija programskog
+                    inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                    za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                    16.mjestu u vještini IT Software Solutions for Business.</p>
+            </div>
+            <div class="redA">
+                <div class="stupacA">
+                    <img class="galerija"src="../img/galerija1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="stupacA">
+                    <img class="galerija"src="../img/galerija2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+            </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+    
+                    <div class="mySlides">
+                        <img src="../img/galerija1.jpg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides">
+                        <img src="../img/galerija2.jpg" style="width:100%">
+                    </div>
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div class="video">
+                <video width=100% controls src="../video/worldskills.mp4"></video>
+            </div>
+        </div>
+    </div>
+    <div class="podnozje">
+        <h1>Budi izvrstan u onom što voliš</h1>
+        <h2>Zaiskri</h2>
+    </div>
+
+    <script src="../JS/Kontakt.js"></script>
+    <script src="/JS/Galerija.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/novosti3.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- materialIcons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Novosti 3</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <ul class="nav1">
+            <li class="logo"><a href="/Index.html"><img src="/img/Algebra-logo.png" alt="Algebra Logo" width="40"
+                        height="40"></a></li>
+            <li class="gumb5"><a href="/index.html"><i class="material-icons">house</i>Početna</a></li>
+            <li class="gumb4"><a href="/Stranice/ONama.html"><i class="material-icons">question_answer</i>O nama</a></li>
+            <li class="gumb3"><a href="/stranice/Novosti.html"><i class="material-icons">info</i>Novosti</a></li>
+            <li class="gumb2"><a href="/stranice/NastavniPlan.html"><i class="material-icons">info</i>Nastavni plan</a>
+            </li>
+            <li id="onclick" class="kontakt" data-toggle="modal" data-target="#exampleModalCenter"><a href="#"><i
+                class="material-icons">mail</i>Kontakt</a></li>
+            <li class="meni"><a href="#"><i class="material-icons">menu</i></a></li>
+        </ul>
+    </nav>
+
+   <div id="contactdiv">
+        <form class="form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" enctype="text/plain" id="contact">
+            <h3><i id="iconMail" class="material-icons">email</i>Kontaktirajte nas</h3>
+            <hr /><br />
+            <label>Puno ime: <span></span></label>
+            <br />
+            <input type="text" id="name" placeholder="Ime" required/><br />
+            <br />
+            <label>E-mail: <span></span></label>
+            <br />
+            <input type="text" id="email" placeholder="Email" required/><br />
+            <br />
+            <label>Važnost poruke: <span></span></label>
+            <br />
+            <select name="Važnost" id="Važnost">
+                <option value="Visoka">Visoka</option>
+                <option value="Niska">Niska</option>
+            </select>
+            <br />
+            <br />
+            <label>Vaša poruka:</label>
+            <br />
+            <textarea id="message" placeholder="Poruka..."></textarea><br />
+            <br />
+            <label for="mojBox" class="box">Primaj newsletter: 
+                <input type="checkbox" name="box" id="mojBox" class="box__input">
+                <div class="box__box"></div>
+            </label>
+            <br>
+            <br>
+            <input type="submit" id="send" value="Send" />
+            <input type="button" id="cancel" value="Cancel" />
+            <br />
+        </form>
+    </div>
+
+    <div class="sadrzaj">
+
+        <div class="slika">
+        </div>
+            <h1 class="naslov">Digitalno Junior Ljeto</h1>
+       
+        <div class="odjeljci">
+            <div class="novosti_tekst">
+                <p>Algebra Junior organizira edukativne i zabavne ljetne
+                    praznike za sve osnovnoškolce! I ove smo godine
+                    pripremili digitalne radionice za djecu čiji je fokus
+                    rješavanja raznih problema korištenjem tehnologije,
+                    multimedije, digitalnog dizajna i komunikacija te
+                    stvaranju sadržaja u svim multimedijskim i softverskim
+                    oblicima. Radionice se održavaju u sklopu Digitalnog
+                    ljetnog kampa u Crikvenici i Digitalne ljetne škole u
+                    Zagrebu kako bismo se družili, zabavljali i učili i na
+                    moru i na kontinentu! Na digitalnom kampu i u školi
+                    provodit će se dva različita programa koji su
+                    namijenjena djeci od 1. do 8. razreda. Ovisno o
+                    odabranom terminu, polaznici će prolaziti kroz 1. ili 2.
+                    program, a u slučaju pohađanja dvotjednih programa –
+                    oba. U prvom programu nađe nindže uče biti glazbeni
+                    menadžeri dok su u drugom novinari i kreatori
+                    informacija masovnih medija. Provjerite termine, cijene
+                    i lokacije škole i kampa na sljedećem linku.</p>
+            </div>
+           
+        </div>
+    </div>
+    <div class="podnozje">
+        <h1>Budi izvrstan u onom što voliš</h1>
+        <h2>Zaiskri</h2>
+    </div>
+    
+    <script src="/JS/Kontakt.js"></script>
+</body>
+
+</html>

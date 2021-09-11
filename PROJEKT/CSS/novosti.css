@@ -1,0 +1,112 @@
+.naslov {
+    padding-top: 120px;
+    padding-bottom: 10px;
+    margin: 0 20%;
+    margin-bottom: 4%;
+    border-radius: 0%;
+    border-bottom:3px solid orange;
+    text-align: center;
+    color:black;
+    animation-name: naslovAnimacija;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+
+.sadrzaj {
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.sadrzaj li {
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.sadrzaj a {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sadrzaj img {
+    width: 230px;
+    height: 230px;
+    border-radius: 150%;
+    border: 10px solid rgb(201, 198, 198);
+    color: black;
+    box-shadow: 1px 5px rgb(150, 150, 150);
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.okruglaSlika {
+    animation: pop-in 2s;
+    transform: scale(1.2);
+}
+
+.okruglaSlika h2 {
+    font-size: 3em;
+}
+
+.tekst {
+    font-weight: 600;
+    font-size: 12px;
+    text-shadow: 1px 1px black;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.tekst .datum {
+    display: inline-block;
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 0;
+}
+
+@keyframes naslovAnimacija {
+    0% {
+        margin-top: -20%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@media all and (max-width: 768px) {
+    .sadrzaj {
+        padding-top: 26%;
+    }
+    .tekst p {
+        padding: 0 20px;
+    }
+    .slika h1 {
+        margin-top: 20%;
+        font-size: 2em;
+    }
+    .okruglaSlika {
+        animation: pop-in 0s;
+        transform: scale(1.1);
+    }
+}
+
+@media all and (max-width: 1200px) {}

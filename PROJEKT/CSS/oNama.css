@@ -1,0 +1,236 @@
+#naseVrijednosti, #Povijest, #Algebra_grupa, #Kako_do_nas{
+    padding-top: 2%;
+}
+
+#nav .nav2 {
+    right: 0;
+    border-top-right-radius: 0;
+    animation-name: navigacijaAnimacija;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    z-index: 2;
+}
+
+#nav .nav2 li a {
+    color: orange;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    float: right !important;
+}
+
+#nav .nav2 li a:hover{
+    background-color: black;
+    color: yellow;
+}
+
+.content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.content .slika {
+    display: inline-block;
+    margin-top: -15%;
+    height: 700px;
+    width:100%;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+
+.content .slika img{
+    width: 100%;
+}
+
+.slika{
+    animation-name: slikaAnimacija;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.naslov{
+   border-bottom: 3px solid orange;
+   margin: 1% 20%;
+   padding-bottom: 1%;
+}
+
+.odjelci h1{
+    color: rgb(180, 0, 0);
+    padding: 2%;
+    font-size: 200%;   
+}
+
+.rukopis{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    padding: 3% 0;
+    margin-bottom: 1.5%;
+    background-color: rgb(245, 245, 245);
+}
+
+.content p{
+    text-align: left;
+}
+
+p{
+    padding: 0 15%;
+}
+
+.stupci{
+    padding: 0 10%;
+    display: grid;
+    grid-gap: .5% .10%;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.stupac {
+    padding: 5% 5%;
+    border:rgb(112, 112, 112) 1px solid;
+}
+
+.stupac p {
+    padding: 5% 5%;
+    border-top: gray 1px solid;
+    text-align: justify;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.stupac h2 {
+    display: inline;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+.Povijest .stupci .stupac h2{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.stupci2{
+    padding: 0 13%;
+    padding-bottom: 3%;
+    display: grid;
+    grid-gap: 20px;
+    grid-column-gap: 20px;
+    text-transform: uppercase;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.stupac2 h3 {
+    font-size: 1em;
+}
+
+h3{
+    text-align: left;
+    font-size: 1em;
+    border-bottom: gray 1px solid;
+}
+
+.godina {
+    color: rgb(15, 79, 175);
+}
+
+.stupci3{
+    padding: 3% 20% 70%;
+    padding-bottom: 40%;
+    display: grid;
+    grid-gap: 4% 2%;
+    grid-template-columns: 50% 50%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.822) 0%, rgba(248, 246, 246, 0.432) 100%), url("../img/kakoDoNas.jpg");
+    background-attachment: fixed;
+    background-repeat: round;
+}
+
+.stupac3{
+    background-color: white;
+    text-align: left;
+    padding: 0 1%;
+    border: gray 1px solid;
+}
+
+.stupac3 p {
+    text-align: justify;
+}
+
+.stupac3 i {
+    color: rgb(0, 102, 255);
+}
+
+.stupac3 h2 {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+iframe {
+    width: 210%;
+    height: 300%;
+}
+
+
+
+
+@keyframes slikaAnimacija {
+    0% {
+        margin-top: -30%;
+    }
+    100% {
+        margin-top: -15%;
+    }
+}
+
+@keyframes navigacijaAnimacija {
+    0% {
+        right: -100px;
+    }
+    50% {
+        right: 60px;
+    }
+    75% {
+        right: 10px;
+    }
+    90% {
+        right: 20px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .stupci, .stupci2, .stupci3{
+        grid-template-columns: 100%;
+    } 
+    .content .slika {
+        height: 100%;
+    }
+    .Algebra_grupa h1 {
+        padding-top: 30%;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .stupci3{
+        padding-bottom: 40%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .stupac{
+        grid-template-columns: auto;
+    }
+    .content .slika {
+        height: 100%;
+    }
+    .stupci3{
+        padding-bottom: 40%;
+    }
+}

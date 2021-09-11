@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/pocetna.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- materialIcons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Pocetna</title>
+</head>
+
+<body onload="typeWriter()">
+    <video poster="./img/TypingPS.png" autoplay muted loop>
+        <source src="./video/typingOnlaptop.mp4" type="video/mp4">
+    </video>
+    <nav id="nav">
+        <ul class="nav1">
+            <li class="logo"><a href="/Index.html"><img src="img/Algebra-logo.png" alt="Algebra Logo" width="40"
+                        height="40"></a></li>
+            <li class="gumb4"><a href="index.html"><i class="material-icons">house</i>Početna</a></li>
+            <li class="gumb3"><a href="Stranice/ONama.html"><i class="material-icons">question_answer</i>O nama</a></li>
+            <li class="gumb2"><a href="stranice/Novosti.html"><i class="material-icons">info</i>Novosti</a></li>
+            <li class="gumb1"><a href="stranice/NastavniPlan.html"><i class="material-icons">info</i>Nastavni plan</a>
+            </li>
+            <li id="onclick" class="kontakt" data-toggle="modal" data-target="#exampleModalCenter"><a href="#"><i
+                        class="material-icons">mail</i>Kontakt</a></li>
+            <li class="meni"><a href="#"><i class="material-icons">menu</i></a></li>
+        </ul>
+    </nav>
+
+    <!--     test -->
+    <div id="contactdiv">
+        <form class="form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" enctype="text/plain" id="contact">
+            <h3><i id="iconMail" class="material-icons">email</i>Kontaktirajte nas</h3>
+            <hr /><br />
+            <label>Puno ime: <span></span></label>
+            <br />
+            <input type="text" id="name" placeholder="Ime" required /><br />
+            <br />
+            <label>E-mail: <span></span></label>
+            <br />
+            <input type="text" id="email" placeholder="Email" required /><br />
+            <br />
+            <label>Važnost poruke: <span></span></label>
+            <br />
+            <select name="Vaznost" id="vaznost">
+                <option value="Visoka">Visoka</option>
+                <option value="Niska">Niska</option>
+            </select>
+            <br />
+            <br />
+            <label>Vaša poruka:</label>
+            <br />
+            <textarea id="message" placeholder="Poruka..."></textarea><br />
+            <br />
+            <label for="mojBox" class="box">Primaj newsletter: 
+                <input type="checkbox" name="box" id="mojBox" class="box__input">
+                <div class="box__box"></div>
+            </label>
+            <br>
+            <br>
+            <input type="submit" id="send" value="Send" />
+            <input type="button" id="cancel" value="Cancel" />
+            <br />
+        </form>
+    </div>
+
+    <div class="container">
+        <p>
+            <span id="demo"></span>
+            <span id="demo2"></span>
+            <span class="cursor">&nbsp;</span>
+        </p>
+    </div>
+
+    <!-- <p class="line anim-typewriter">Zaiskri u onome što voliš.</p> -->
+
+    <script src="JS/Tipkanje.js"></script>
+    <script src="JS/Kontakt.js"></script>
+</body>
+
+</html>

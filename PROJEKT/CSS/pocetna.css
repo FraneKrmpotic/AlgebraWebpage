@@ -1,0 +1,109 @@
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+video{
+    position: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    position: fixed;
+    top: 40%;
+    left: 20%;
+    z-index: 1;
+  }
+
+.container p {
+    align-self: center;
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px black;
+    overflow: hidden;
+    padding: 0.1rem;
+    color: white;
+    }
+
+#demo2 {
+    color: red;
+}
+
+.container p span.cursor {
+        display: inline-block;
+        width: 40px;
+        margin-left: 0.2rem;
+        animation: blink 1s infinite;
+      }
+
+
+
+@keyframes blink {
+    0% {
+      background-color: white;
+    }
+    49% {
+      background-color: white;
+    }
+    50% {
+      background-color: transparent;
+    }
+    99% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: white
+    }
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1200px) {
+    .container {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position: absolute;
+      align-self: left;
+      top: 50%;
+      width: 100%;
+      padding: 0 0!important;
+      
+    }
+
+    .container p {
+      position:static;
+      font-size: 2rem;
+      overflow: hidden;
+    }
+
+    video {
+      position:fixed;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #navigacija ul {
+      position:relative;
+    }
+    
+  }
+  @media all and (max-width: 768px) {
+    video {
+      display: none;
+    }
+    body{
+      background: url('../img/TypingPS.png');
+      background-size: cover;
+    }
+    .container p {
+      position:static;
+      font-size: 1rem;
+      overflow: hidden;
+    }
+
+  
+  }

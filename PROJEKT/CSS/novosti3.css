@@ -1,0 +1,62 @@
+.naslov {
+    padding: 1% auto;
+    padding-bottom: 1%;
+    text-align: center;
+    margin: 4% 20%;
+    border-bottom: 3px solid orange;
+}
+
+.sadrzaj>.slika {
+    background-image: url("../img/novost3.jpg");
+    background-size: cover;
+    position: static;
+    padding: 10% 3%;
+    height: 100px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+
+.slika h1 {
+    margin-top: -3%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    animation-name: slikaAnimacija;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.novosti_tekst p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 1% 10%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@keyframes slikaAnimacija {
+    0% {
+        margin-top: -30%;
+    }
+    100% {
+        margin-top: -3%;
+    }
+  }
+
+@media all and (max-width: 768px) {
+    .sadrzaj {
+        padding-top: 20%;
+    }
+    .slika h1 {
+        margin-top: 10%;
+        font-size: 2em;
+    }
+    .novosti_tekst p {
+        padding: 0 20px;
+    }
+}
